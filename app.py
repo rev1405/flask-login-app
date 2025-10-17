@@ -33,7 +33,7 @@ def login():
                 'username': username,
                 'password': password
             })
-            return "I Love You,with all my heart!"
+            return render_template('success.html', username=username)
         except Exception as e:
             return f"❌ Failed to save login details: {e}"
 
