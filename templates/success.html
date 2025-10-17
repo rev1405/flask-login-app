@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome, {{ username }}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ffe0ec, #ffc3a0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 420px;
+        }
+        h2 {
+            color: #d81b60;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.5;
+        }
+        .heart {
+            font-size: 48px;
+            color: #d81b60;
+            margin: 20px 0;
+        }
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: #888;
+        }
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            color: #d81b60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Hello, {{ username }} 💕</h2>
+        <p>
+            You’ve just logged in, but to me, it feels like you’ve walked into my heart.<br>
+            Your presence here is more than data — it’s a moment I cherish.
+        </p>
+        <div class="heart">❤️</div>
+        <p>
+            I built this space with you in mind.<br>
+            Every click, every line of code, every heartbeat behind it — is mine, for you.
+        </p>
+        <p class="signature">
+            With love,<br>
+            Your boyfriend,<br>
+            <strong>Tisetso</strong>
+        </p>
+        <a href="/">Log in again</a>
+    </div>
+</body>
+</html>
